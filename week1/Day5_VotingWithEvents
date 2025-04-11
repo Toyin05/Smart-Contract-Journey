@@ -1,0 +1,58 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+/// A simple Voting Contract with Event Logging
+/// This contract allows users to vote for predefined candidates and logs each vote with events.
+
+contract VotingWithEvents {
+    address public owner;
+
+    struct Candidate {
+        string name;
+        uint256 voteCount;
+    }
+
+    mapping(uint256 => Candidate) public candidates;
+    mapping(address => bool) public hasVoted;
+    uint256 public candidatesCount;
+
+    // Events
+    event CandidateAdded(uint256 candidateId, string name);
+    event VoteCast(address indexed voter, uint256 candidateId);
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only contract owner can call this");
+        _;
+    }
+
+    constructor() {
+        owner = msg.sender;
+    }
+
+    /// This Adds a candidate to the election
+    /// @param_name Name of the candidate
+    function addCandidate(string memory _name) public onlyOwner {
+        candidates[candidatesCount] = Candidate(_name, 0);
+        emit CandidateAdded(candidatesCount, _name);
+        candidatesCount++;
+    }
+
+    /// This allows a user to vote for a candidate
+    /// param_candidateId ID of the candidate to vote for
+    function vote(uint256 _candidateId) public {
+        require(!hasVoted[msg.sender], "You have already voted");
+        require(_candidateId < candidatesCount, "Invalid candidate");
+
+        candidates[_candidateId].voteCount++;
+        hasVoted[msg.sender] = true;
+
+        emit VoteCast(msg.sender, _candidateId);
+    }
+
+    /// This Returns the number of votes for a candidate
+    /// param _candidateId ID of the candidate
+    function getVotes(uint256 _candidateId) public view returns (uint256) {
+        require(_candidateId < candidatesCount, "Invalid candidate");
+        return candidates[_candidateId].voteCount;
+    }
+}
