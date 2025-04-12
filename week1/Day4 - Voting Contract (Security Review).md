@@ -2,7 +2,7 @@
 
 This contract simulates a decentralized voting system with real-world logic and security in mind.
 
-### Core Concepts Implemented
+### Concepts Implemented
 - **Structs** to represent each candidate with their name and vote count.
 - **Mappings** to manage candidates and track voter participation.
 - **Access Control** with custom `onlyOwner` modifier — only the contract deployer can add candidates.
