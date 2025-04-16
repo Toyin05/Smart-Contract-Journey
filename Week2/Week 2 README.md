@@ -16,7 +16,7 @@ Welcome to Week 2 of my smart contract development journey. This week, I’m div
 - Allows users to store and retrieve phone numbers linked to their wallet address  
 - This phonebook is an important concept and can be used to power things like user profiles, balances, and registry contracts
 
-**File Name:** `Day2_Phonebook.sol`  
+**File Name:** `Day1_Phonebook.sol`  
 
 
 ## Day 2 – Structs & Enums
@@ -32,8 +32,23 @@ Welcome to Week 2 of my smart contract development journey. This week, I’m div
 - Only registered voters can then vote during the voting phase.
 - The winner is decided after tallying votes.
 
-**File:** Name: `Day7_ElectionStructs&Enums.sol`
+**File Name:** `Day2_ElectionStructs&Enums.sol`
 
+
+## Day 3 – Constructors & Visibility
+
+**What I Learned:**
+- How constructors initialize contract state on deployment
+- The differences between `public`, `private`, and `internal` visibility
+- How to apply visibility to variables and functions to control access
+
+**What I Built:**
+- A basic Bank smart contract
+- Constructor sets the deployer as the contract owner
+- Uses visibility specifiers on variables and functions to demonstrate access control
+
+**File Name:**  
+`Day3_Bank.sol`
 
 
 Every contract in this repo is a step in my journey to mastering Solidity and smart contract development.
