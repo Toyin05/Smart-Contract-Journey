@@ -51,4 +51,19 @@ Welcome to Week 2 of my smart contract development journey. This week, I’m div
 `Day3_Bank.sol`
 
 
+## Day 4 – Modifiers
+
+**What I Learned:**
+- How to use modifiers in Solidity to enforce access control.
+- The `onlyOwner` modifier helps prevent unauthorized actions by restricting access to sensitive functions.
+- Modifiers make the contract easier to read and maintain by centralizing access rules.
+
+**What I Built:**
+- I extended the existing `Bank.sol` contract by introducing a custom modifier called `onlyOwner`.
+- Used this modifier to restrict the `withdraw()` function. This ensures that only the contract owner can perform withdrawals.
+- Maintained good visibility practices with `public`, `private`, and `internal` variables.
+
+**File:** Name: `Day4_Modifiers.sol`
+
+
 Every contract in this repo is a step in my journey to mastering Solidity and smart contract development.
