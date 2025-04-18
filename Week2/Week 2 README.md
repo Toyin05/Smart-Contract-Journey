@@ -63,7 +63,24 @@ Welcome to Week 2 of my smart contract development journey. This week, I’m div
 - Used this modifier to restrict the `withdraw()` function. This ensures that only the contract owner can perform withdrawals.
 - Maintained good visibility practices with `public`, `private`, and `internal` variables.
 
-**File:** Name: `Day4_Modifiers.sol`
+**File Name:** `Day4_Modifiers.sol`
+
+
+## Day 5 – Events & Logging in Solidity
+
+**What I Learned:**
+- How Solidity events work as on-chain logs.
+- The importance of using `indexed` parameters for filtering logs.
+- How to test and view event logs in the Remix console.
+- That events help us track transactions without storing unnecessary data on-chain.
+
+**What I Built:**
+- Updated the bank contract to include `Deposit` and `Withdrawal` events.
+- Events fire every time a user deposits or withdraws funds.
+- Tested logs using the “Transactions” tab and Remix console.
+
+**File Name:** `Day5_Events.sol`
+
 
 
 Every contract in this repo is a step in my journey to mastering Solidity and smart contract development.
