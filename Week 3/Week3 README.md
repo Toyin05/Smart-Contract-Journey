@@ -1,17 +1,25 @@
-## Week3, Day 1 – Error Handling in Solidity
+## Week 3 – Smart Contract Journey
+
+Hello, welcome to Week 3 of my smart contract development journey. This week is focused on writing more secure and production-ready Solidity contracts by understanding how to handle errors, manage ETH safely, and build better user interactions through control flows.
+
+
+## Day 1 – Error Handling in Solidity (require, revert, assert)
 
 **What I Learned:**
-- How `require` is used for input validation and pre-conditions.
-- How `revert` provides custom error messages and is useful for complex conditions.
-- How `assert` is mainly used to test for invariants and internal consistency.
-- Why proper error handling is critical to avoid loss of funds and unexpected behavior in smart contracts.
+- The role of `require` in validating inputs and access control.
+- How `revert` can be used for custom errors and complex conditions.
+- When to use `assert` to enforce internal logic and detect serious bugs.
+- Proper error handling can prevent critical vulnerabilities and improve contract robustness.
 
 **What I Built:**
-- A basic Wallet contract that lets users deposit and withdraw ETH securely.
-- Used `require` to validate deposits and prevent over-withdrawals.
-- Used `revert` in case ETH transfer fails.
-- Used `assert` to ensure the contract's ETH balance is never negative.
+- A simple wallet contract that allows deposits and withdrawals.
+- Used `require` to ensure sufficient balance before withdrawals.
+- Used `revert` to handle ETH transfer failures.
+- Used `assert` to validate internal state and sanity checks.
 - Included comments and structure for better readability and documentation.
 
-**File Name:**  
+**File Name:** 
 `Day1_Wallet.sol`
+
+
+Every contract in this repo is a step in my journey to mastering Solidity and smart contract development.
