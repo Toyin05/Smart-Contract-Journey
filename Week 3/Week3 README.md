@@ -22,4 +22,24 @@ Hello, welcome to Week 3 of my smart contract development journey. This week is 
 `Day1_Wallet.sol`
 
 
+## Day 2 – GasLogger.sol
+
+**What I Learned:**
+- How to use Solidity’s global variables: `msg.sender`, `block.timestamp`, `block.number`, and `gasleft()`
+- How to store and manage log data on-chain using structs and dynamic arrays
+- How to retrieve specific on-chain data via index-based access
+- Importance of using `require` to prevent invalid array access
+
+**What I Built:**
+- A contract called `GasLogger` that tracks and stores real-time blockchain variables.
+- Every time the `log()` function is called, it saves:
+  - Who called the function (`msg.sender`)
+  - The current block’s timestamp (`block.timestamp`)
+  - The current block number (`block.number`)
+  - Remaining gas at that point (`gasleft()`)
+
+**File Name:**  
+`Day2_GasLogger.sol`
+
+
 Every contract in this repo is a step in my journey to mastering Solidity and smart contract development.
