@@ -42,4 +42,27 @@ Hello, welcome to Week 3 of my smart contract development journey. This week is 
 `Day2_GasLogger.sol`
 
 
+## Day 3 – Fallback and Receive Functions
+
+**What I Learned**
+- Solidity’s `receive()` function handle ETH transfers with no accompanying data.
+- The `fallback()` function catches:
+  - Unknown calls (functions that don’t exist)
+  - ETH transfers with data (when no `receive()` exists)
+- These functions act as default handlers and are essential for guarding contracts from unexpected behavior.
+- `receive()` and `fallback()` are both `external` and optionally `payable`, and can emit logs to trace interactions.
+- Logging these events helps detect how ETH is being sent — expected vs. unexpected methods — which is critical for security and debugging.
+
+**What I Built**
+- A `FallbackReceiver` smart contract that:
+  - Contains both `receive()` and `fallback()` functions.
+  - Emits logs to distinguish between ETH received normally and via fallback scenarios.
+  - Includes helper functions to:
+    - Check contract balance
+    - Withdraw accumulated ETH
+
+**File Name:** `Day3_FallbackReceiver.sol`
+
+
+
 Every contract in this repo is a step in my journey to mastering Solidity and smart contract development.
