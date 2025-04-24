@@ -64,5 +64,25 @@ Hello, welcome to Week 3 of my smart contract development journey. This week is 
 **File Name:** `Day3_FallbackReceiver.sol`
 
 
+## Day 4 – Solidity File Imports & Modular Contract Design
+
+**What I Learned:**
+- How to split smart contracts into multiple files for better organization and scalability
+- How to use `import` in Solidity to bring in reusable components (modifiers, libraries)
+- Why and how modular contract design is important for real-world projects
+
+**What I Built:**
+- A modular `TokenVault` contract:
+  - Access control is isolated in `AccessControl.sol`
+  - Reusable logic is placed in `VaultLib.sol`
+  - The main contract `Day4_TokenVaultWithImports.sol` imports and uses the others
+- Only the owner can withdraw ether
+- Used `library` + `modifier` with `import` statements for a good and refined structure
+
+**Files:**
+- `Day4_TokenVaultWithImports.sol`
+- `AccessControl.sol`
+- `VaultLib.sol`
+
 
 Every contract in this repo is a step in my journey to mastering Solidity and smart contract development.
