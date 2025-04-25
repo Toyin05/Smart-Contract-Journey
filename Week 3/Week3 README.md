@@ -85,4 +85,25 @@ Hello, welcome to Week 3 of my smart contract development journey. This week is 
 - `VaultLib.sol`
 
 
+## Day 5 – AdvancedBank Contract
+**What I Learned:**
+- How to use global variables like `block.timestamp`, `msg.sender`, etc.
+- Writing and throwing custom errors for better gas efficiency
+- How `receive()` and `fallback()` work in Solidity
+- Using `structs` to store transaction history for each user
+- Modular contract design with events and modifiers
+
+**What I Built:**
+- A more advanced version of last week’s Bank contract
+- The contract includes:
+  - Transaction logging using `structs`
+  - Access control with `onlyOwner` modifier
+  - Error handling using custom `error` type
+  - Fallback and receive functions for direct transfers
+  - Events for logging deposits and withdrawals
+
+**File Name:**  
+Name: `Day5_AdvancedBank.sol`
+
+
 Every contract in this repo is a step in my journey to mastering Solidity and smart contract development.
