@@ -22,5 +22,22 @@ This week, I’exploring deeper, how Solidity structures data, handles efficient
 `Day1_StudentRegistry.sol`
 
 
+## Day 2 – Student Registry: Enhanced with Modifiers, Events & Custom Errors
+
+**What I Learned:**
+- How to use **modifiers** for access control (e.g., onlyOwner)
+- The power of **events** for logging and dapp integrations
+- How to use **custom errors** for cleaner, gas-efficient code
+
+**What I Built:**
+- Upgraded the Student Registry contract with:
+  - Access control using `onlyOwner`
+  - Event logs for `StudentRegistered` and `StudentRemoved`
+  - Custom errors like `AlreadyRegistered`, `NotOwner`, etc.
+- Removed students with admin permission and emitted logs
+
+**File Name:**  
+Day2_EnhancedStudentRegistry.sol
+
 
 Every contract in this repo is a step in my journey to mastering Solidity and smart contract development.
