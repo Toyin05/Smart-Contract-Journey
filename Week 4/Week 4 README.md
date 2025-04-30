@@ -40,4 +40,21 @@ This week, I’exploring deeper, how Solidity structures data, handles efficient
 Day2_EnhancedStudentRegistry.sol
 
 
+## Day 3 – ERC20 Token
+
+**What I Learned:**
+- ERC20 is a token standard that allows for fungible tokens on Ethereum.
+- Using OpenZeppelin contracts makes development secure and standard-compliant.
+- The `ERC20` base contract handles balances, transfers, and metadata.
+- The `Ownable` module provides access control to functions like `mint()`.
+
+**What I Built:**
+- A custom ERC20 token called **MyToken (MTK)**.
+- The token is mintable by the contract owner and fully transferable between users.
+- Initial supply is 1000 MTK tokens minted to the deployer at contract creation.
+
+**File Name:**
+`Day3_Token.sol`
+
+
 Every contract in this repo is a step in my journey to mastering Solidity and smart contract development.
